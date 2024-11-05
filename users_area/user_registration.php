@@ -10,8 +10,8 @@ include('../functions/common_functions.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce User Registeration Page</title>
-    <link rel="stylesheet" href=<?php echo "$cdn/assets/css/bootstrap.css"; ?> />
-    <link rel="stylesheet" href=<?php echo "$cdn/assets/css/main.css"; ?> />
+    <link rel="stylesheet" href="https://d2egrbjmr3tvi4.cloudfront.net/assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://d2egrbjmr3tvi4.cloudfront.net/assets/css/main.css" />
 </head>
 
 <body>
@@ -68,7 +68,9 @@ include('../functions/common_functions.php');
             </div>
         </div>
     </div>
-    <script src=<?php echo "$cdn/assets/js/bootstrap.bundle.js" ?>></script>
+
+    <script src="https://d2egrbjmr3tvi4.cloudfront.net/assets/js/bootstrap.bundle.js"></script>
+
 </body>
 
 </html>

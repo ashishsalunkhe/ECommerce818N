@@ -1,7 +1,6 @@
 <?php
 include("./includes/connect.php");
 include("./functions/common_functions.php");
-define('CDN_URL', 'https://d2egrbjmr3tvi4.cloudfront.net/');
 session_start();
 ?>
 <!DOCTYPE html>

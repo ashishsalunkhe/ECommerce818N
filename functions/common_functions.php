@@ -2,8 +2,7 @@
 // include connect file from DB
 // include('./includes/connect.php');
 // getting products
-// Define CDN URL as a constant
-define('CDN_URL', 'https://d2egrbjmr3tvi4.cloudfront.net/');
+
 
 function getProduct($numToDisplay = '')
 {
