@@ -1,7 +1,6 @@
 <?php
 include('../includes/connect.php');
 include('../functions/common_functions.php');
-global $cdn='https://d2egrbjmr3tvi4.cloudfront.net/'; 
 ?>
 
 <!DOCTYPE html>

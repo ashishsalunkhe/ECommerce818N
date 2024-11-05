@@ -2,7 +2,7 @@
 include("../includes/connect.php");
 include("../functions/common_functions.php");
 session_start();
-global $cdn='https://d2egrbjmr3tvi4.cloudfront.net/'; 
+
 if (isset($_GET['order_id'])) {
     $order_id = $_GET['order_id'];
     $select_order_query = "SELECT * FROM `user_orders` WHERE order_id = '$order_id'";

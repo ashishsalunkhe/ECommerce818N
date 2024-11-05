@@ -8,7 +8,6 @@ use Aws\Exception\AwsException;
 
 // Database connection parameters
 $con = new mysqli('webappdatabase.c92ki8662z0f.us-east-1.rds.amazonaws.com', 'admin', '0157cs131023', 'ecommerce_1');
-
 // Check connection
 if ($con->connect_error) {
     die("Database connection failed: " . $con->connect_error);
