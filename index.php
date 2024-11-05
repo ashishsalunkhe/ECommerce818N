@@ -11,8 +11,8 @@ define('CDN_URL', 'https://d2egrbjmr3tvi4.cloudfront.net/');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce Home Page</title>
-    <link rel="stylesheet" href=<?php echo "" . CDN_URL . "/assets/css/bootstrap.css"; ?> />
-    <link rel="stylesheet" href=<?php echo "" . CDN_URL . "/assets/css/main.css"; ?> />
+    <link rel="stylesheet" href="<?php echo CDN_URL . '/assets/css/bootstrap.css'; ?>" />
+    <link rel="stylesheet" href="<?php echo CDN_URL . '/assets/css/main.css'; ?>" />
 </head>
 
 <body>
@@ -362,7 +362,7 @@ define('CDN_URL', 'https://d2egrbjmr3tvi4.cloudfront.net/');
     </div> -->
     <!-- End Footer -->
 
-    <script src=<?php echo "" . CDN_URL . "/assets/js/bootstrap.bundle.js" ?> ></script>
+    <script src=<?php echo CDN_URL . "/assets/js/bootstrap.bundle.js" ?> ></script>
 </body>
 
 </html>
