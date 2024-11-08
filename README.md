@@ -12,6 +12,83 @@ This project involved designing, developing, and deploying a secure, scalable e-
 - **CloudFront CDN** to accelerate content delivery globally.
 - **Encryption** for securing data both at rest and in transit.
 
+
+---
+
+## Architecture 
+
+
+![image](https://github.com/user-attachments/assets/e5732214-678a-431e-919e-0813dec380f8)
+
+
+
+
+
+                              +----------------------------------+
+                              |          AWS WAF                |
+                              |   (Web Application Firewall)     |
+                              +----------------------------------+
+                                        |
+                                        |
+                                        v
+                           +-----------------------------+
+                           |    Amazon CloudFront        |
+                           |       (Content CDN)         |
+                           +-----------------------------+
+                                        |
+                                        |
+                                        v
+                           +-----------------------------+
+                           |       Amazon Route 53       |
+                           |        (DNS Routing)        |
+                           +-----------------------------+
+                                        |
+                                        |
+                                        v
+                           +--------------------------------------+
+                           | Application Load Balancer (ALB)      |
+                           |     (Distributes Traffic)            |
+                           +--------------------------------------+
+                                        |
+                 +----------------------+--------------------------+
+                 |                      |                          |
+                 v                      v                          v
+         +---------------+      +---------------+        +---------------+
+         |   EC2 (App)   |      |   EC2 (App)   |        |   EC2 (App)   |
+         | (Auto Scaling)|      | (Auto Scaling)|        | (Auto Scaling)|
+         +---------------+      +---------------+        +---------------+
+                 |                      |                          |
+                 +----------------------+--------------------------+
+                                        |
+                                        |
+                         +-----------------------------+
+                         |       Amazon RDS            |
+                         |     (MySQL Database)        |
+                         |  (Multi-AZ, Private Subnet) |
+                         +-----------------------------+
+                                        |
+                                        |
+                          +------------------------------+
+                          |       AWS KMS (Encryption)   |
+                          +------------------------------+
+
+         +------------------------+               +--------------------------+
+         |       S3 Bucket        |               |    NAT Gateway           |
+         | (Static Content, Logs) |               | (Public Subnet)          |
+         +------------------------+               +--------------------------+
+                 |
+                 v
+          +-----------------------------+
+          |  Amazon CloudWatch, Config  |
+          |   (Monitoring & Logging)    |
+          +-----------------------------+
+                 |
+                 v
+          +-----------------------------+
+          |       AWS CloudTrail        |
+          | (Audit Logging & Security)  |
+          +-----------------------------+
+
 ---
 
 ## Project Phases
